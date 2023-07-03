@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Greeting from './components/pure/greeting';
+import GreetingF from './components/pure/greetingF';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        {/* Este es mi primer componente */}
+        <Greeting name = { 'Rodolfo' } ></Greeting>
+        <GreetingF name = { 'Rodolfo' }></GreetingF>
       </header>
     </div>
   );
