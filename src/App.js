@@ -1,13 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+// import Ejemplo1 from './hooks/Ejemplo1';
+// import Ejemplo2 from './hooks/Ejemplo2';
+// import MiComponenteConContexto from './hooks/Ejemplo3';
+import Ejemplo4 from './hooks/Ejemplo4';
 // import Greeting from './components/pure/greeting';
 // import GreetingF from './components/pure/greetingF';
-import TaskListComponent from './components/container/task_list';
-import ComponenteA from './components/pure/ComponenteA';
-import ComponenteB from './components/pure/ComponenteB';
-import Contacto from './models/Contacto';
+// import TaskListComponent from './components/container/task_list';
+// import ComponenteA from './components/pure/ComponenteA';
+// import ComponenteB from './components/pure/ComponenteB';
+// import Contacto from './models/Contacto';
 
-const contacto = new Contacto('Rodolfo', 'Riveros', 'rodolfo.riveros@example.com', true);
+//const contacto = new Contacto('Rodolfo', 'Riveros', 'rodolfo.riveros@example.com', true);
 
 function App() {
   return (
@@ -29,8 +33,18 @@ function App() {
         {/* <Greeting name = { 'Rodolfo' } ></Greeting> */}
         {/* <GreetingF name = { 'Rodolfo' }></GreetingF> */}
         {/* <TaskListComponent></TaskListComponent> */}
-        <ComponenteA contacto={contacto} />
-        <ComponenteB contacto={contacto} />
+        {/* <ComponenteA contacto={contacto} /> */}
+        {/* <ComponenteB contacto={contacto} /> */}
+
+        {/* ejemplo de hooks */}
+        {/* <Ejemplo1 /> */}
+        {/* <Ejemplo2 /> */}
+        {/* <MiComponenteConContexto></MiComponenteConContexto> */}
+        <Ejemplo4 nombre= 'Rodolfo'>
+          <h3>
+            contenido del props.children
+          </h3>
+        </Ejemplo4>
       </header>
     </div>
   );
